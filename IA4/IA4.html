@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>IA4 Product features </title>
+    <!-- Bootstrap Library Here  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+
+    <!-- CSS Here -->
+<style>
+.container-feature{
+background-color: red;
+padding:40px
+}
+
+.container-feature h2{
+color:black;
+font-size: 50px;
+font-weight: bold;
+font-family:cursive;
+margin: 20px;
+}
+.search{
+width:50%;
+color:black;
+font-size: 50px;
+font-weight: bold;
+background-color: red;
+border:3px solid black;
+margin-bottom:30px ;
+
+/* move search bar to center */
+
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+table,th, td{
+border:2px solid gray;
+height:70px;
+}
+
+th{
+background-color: gray;
+color: black ;
+font-size: 25px;
+text-align:center;
+}
+
+tr:hover{
+background-color: red;
+color:black;
+transition: 1s;
+}
+
+td:hover{
+color: black;
+
+}
+
+
+</style>
+
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+$(document).ready(function(){
+$("#mySearch").on("keyup", function(){
+var value=$(this).val().toLowerCase();
+$("#myTable tr").filter(function(){
+$(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+
+
+});
+
+
+});
+
+
+
+});
+
+
+
+
+</script>
+
+
+    
+
+
+</head>
+<body>
+<!-- HTML Content Here  -->
+
+
+<div class="container-feature text center">
+<div class="row">
+<h2> Smart Home Assistant </h2>
+
+   <!--Search Bar -->
+<input Id="mySearch" type="text" class="search" placeholder="search...">
+
+<!-- Table to present features   -->
+
+<table>
+<!-- Table Head -->
+<thead>
+<tr>
+<th>   ITems</th>
+<th>  Features </th>
+<th>  Description </th>
+</tr>
+
+</Thead>
+
+<!-- Table Body -->
+
+<tbody id="myTable">
+<tr>
+<td> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-fullscreen" viewBox="0 0 16 16">
+    <path d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"/>
+  </svg></td>
+<td> touch screen </td>
+<td> Tounch Screen to control the slides</td>
+</tr>
+
+<tr>
+    <td> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-app" viewBox="0 0 16 16">
+        <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+      </svg></td>
+    <td> App </td>
+    <td> App to control the Smarthome assistant </td>
+    </tr>
+    
+    <tr>
+        <td> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+          </svg></td>
+        <td> Artificial Intelligence: </td>
+        <td> AI  personalized recommendation  , adjustment setting  based on the user behavior pattern.
+        </td>
+        </tr>
+
+
+
+</tbody>
+
+
+
+</table>
+
+
+</div>
+</div>
+
+
+
+</body>
+</html>

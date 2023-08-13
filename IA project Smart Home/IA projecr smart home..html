@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Smart Home </title>
+    <!-- Bootstrap Library Here  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+
+    <!-- CSS Here -->
+<style>
+/* IA1 */
+.container-company{
+background-color:darkred;
+height: 500px;
+
+}
+
+.container-company h2{
+    font-size: 80px;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+padding:40px; 
+text-shadow: 5px 5px 5px ;
+font-weight:bold ;
+padding-top: 80px;
+}
+
+.container-company p{
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+padding:10px; 
+}
+
+.container-company button{
+    font-size: 30p;
+    color:darkblue;
+    background-color: darkgray( 89, 89, 89);
+    font-family: Arial, Helvetica, sans-serif;
+padding:10px;
+
+width:350px;
+border:6px solid black;
+}
+/* reponsive web design - smartphone */
+
+@media only screen and (max-width:600px){
+
+    container-company h2{
+    font-size: 50px;
+   
+}
+
+.container-company p{
+    font-size: 25px;
+   
+}
+}
+/* IA2 */
+.product{
+width: 300px;
+height:300px;
+border:5px solid darkblue
+border-radius: 50%;
+padding:10px;
+margin:10px;
+}
+
+.container-product{
+background-color: beige;
+padding:20px;
+
+}
+.container-product h2{
+font-size: 40px;
+color: brown;
+font-weight:bolder ;
+font-family: 'Times New Roman', Times, serif;
+}
+.container-product P{
+    font-size: 25px;
+color: red;
+font-weight:light ;
+font-family:'Times New Roman', Times, serif;
+
+}
+.container-product button{
+font-size: 30px ;
+color:aqua;
+background-color: gray;
+width:300px;
+
+}
+/* IA3 */
+.container-team{
+background-color:gray
+padding:20px;
+
+}
+
+.member{
+width:300px;
+height:300px;
+border-radius:50%;
+border:5px solid lightgreen;
+}
+.box{
+background-color:gray;
+padding:20px:
+border:5px solid black;
+border-radius:30px;
+}
+
+.container-team H2{
+color:yellow;
+font: size 40px;
+font-weight:bold ;
+font-family: 'Times New Roman', Times, serif;
+margin:20px;
+}
+.container-team H3{
+color:white;
+font-size:30px;
+font-weight:bold ;
+font-family: 'Times New Roman', Times, serif;
+margin:10px;
+}
+.container-team p{
+color:white;
+font-size:30px;
+font-weight:bold ;
+font-family: 'Times New Roman', Times, serif;
+    margin:10px;
+}
+
+.box:hover{
+background-color: lightyellow;
+box-shadow: 10px 10px 10px black ;
+transition: 1s;
+
+}
+
+/* IA4*/
+.container-feature{
+background-color: red;
+padding:40px
+}
+
+.container-feature h2{
+color:black;
+font-size: 50px;
+font-weight: bold;
+font-family:cursive;
+margin: 20px;
+}
+.search{
+width:50%;
+color:black;
+font-size: 50px;
+font-weight: bold;
+background-color: red;
+border:3px solid black;
+margin-bottom:30px ;
+
+/* move search bar to center */
+
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+table,th, td{
+border:2px solid gray;
+height:70px;
+}
+
+th{
+background-color: gray;
+color: black ;
+font-size: 25px;
+text-align:center;
+}
+
+tr:hover{
+background-color: red;
+color:black;
+transition: 1s;
+}
+
+td:hover{
+color: black;
+
+}
+/* IA5*/
+.slide-pic{
+width: 100%;
+Height:400px;
+
+}
+
+.container-smart h2{
+background-color: gray;
+color: white;
+font-size: 30px;
+opacity: 0.8;
+margin-bottom: 20px;
+}
+
+.carousel-control-prev-icon{
+background-color: gray;
+width: 50px;
+height: 50px;
+
+}
+
+.carousel-control-next-icon{
+background-color: gray;
+width: 50px;
+height: 50px;
+}
+
+.carousel-indicator [data-bs-traget]{
+background-color: gray;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+}
+/* IA6*/
+.order{
+width:300px;
+height:300px;
+border-radius:50%;
+border:8px gray;
+
+}
+
+.container-order{
+
+padding:40px;
+background-color: gray;
+
+}
+
+.container-order h2{
+font-size: 40px;
+color: white;
+font-weight: bold;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-order P{
+font-size: 30px;
+color:blueviolet;
+font-weight: light;
+font-family: cursive;
+}
+
+.container-order button{
+font-size: 30px;
+color:aliceblue;
+background-color: black;
+width: 60%;
+}
+
+.container-order button:hover {
+font-size: 30px;
+color:aliceblue;
+background-color: black;
+width:60%;
+}
+
+.modal-content{
+background-color: lightgreen;
+font-size: 25px;
+color: black;
+
+}
+
+.modal-dialog{
+width: 600px;
+
+}
+
+.modal-footer{
+width: 100%;
+color: yellow;
+background-color: black;
+font-size: 30px;
+
+}
+
+modal-header h3{
+    color: aquamarine;
+
+font-size: 30px;
+font-family: cursive;
+
+}
+/* IA7*/
+.order{
+width:300px;
+height:300px;
+border-radius:50%;
+border:8px gray;
+
+}
+
+.container-order{
+
+padding:40px;
+background-color: gray;
+
+}
+
+.container-order h2{
+font-size: 40px;
+color: white;
+font-weight: bold;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-order P{
+font-size: 30px;
+color:blueviolet;
+font-weight: light;
+font-family: cursive;
+}
+
+.container-order button{
+font-size: 30px;
+color:aliceblue;
+background-color: black;
+width: 60%;
+}
+
+.container-order button:hover {
+font-size: 30px;
+color:aliceblue;
+background-color: black;
+width:60%;
+}
+
+.modal-content{
+background-color: lightgreen;
+font-size: 25px;
+color: black;
+
+}
+
+.modal-dialog{
+width: 600px;
+
+}
+
+.modal-footer{
+width: 100%;
+color: yellow;
+background-color: black;
+font-size: 30px;
+
+}
+
+modal-header h3{
+    color: aquamarine;
+
+font-size: 30px;
+font-family: cursive;
+
+}
+/* IA8*/
+.container-contact{
+background-color: gray;
+padding:40px;
+
+}
+.container-contact h2{
+font-size:50px;
+color:yellow;
+font-family: cursive;
+font-weight: bold;
+margin-bottom: 30px;
+
+}
+
+.container-contact p{
+font-size: 30px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.container-contact input{
+margin: 20px;
+font-size: 30px;
+color:gray;
+background-color: yellow;
+
+}
+
+.container-contact textarea{
+Margin-bottom:20px;
+font-size: 30px;
+color: black;
+background-color: yellow;
+
+}
+
+.container-contact label{
+margin-bottom: 20px;
+font-size: 30px;
+color:balck ;
+}
+
+.container-contact input[ type="checkbox"]{
+transform: scale(2);
+margin:10px;
+
+}
+container-contact input[ type="radio"]{
+transform: scale(2);
+margin:10px;
+
+}
+
+.container-contact.btn-primary{
+
+    margin:20px;
+    font-size: 30;
+
+
+
+}
+/* IA9*/
+.navbar{
+background-color: gray;
+font-size: 20px;
+padding: 10px;
+position: fixed;
+width: 100px;
+opacity: 0.8;
+x-index:10;
+}
+
+.navbar li a{
+
+color:white;
+font-size: 25px;
+padding: 10px;
+text-decoration: none;
+
+}
+
+.navbar li a:hover{
+color:yellow;
+background-color: black;
+transition: ls;
+padding: 13px;
+}
+
+.navbar-brand{
+color: lightgreen;
+font-size: 30px;
+font-family: cursive;
+font-weight: bold;
+}
+</style>
+
+<!-- JavaScript -->
+<script>
+// IA1
+function welcomeMsg(){
+
+alert("welcome to Smart Home Company!");
+
+}
+// IA2 
+function showInfo(){
+var x=document.getElementById("productInfo");
+
+if(x.style.display=="none"){
+//consition 1 where display is none
+x.style.display="block";
+}else{
+// condition 2 where display is block 
+x.style.display="none";
+}
+}
+
+// IA3
+// image1
+function hoverImage1(){
+
+document.getElementById("image1").src="Images/member 11.jpg";
+}
+function unhoverImage1(){
+document.getElementById("image1").src="images/member 1.jpg";
+}
+
+// Image2
+function hoverImage2(){
+
+document.getElementById("image2").src="Images/member 22.jpg";
+}
+function unhoverImage2(){
+document.getElementById("image2").src="images/member 2.jpg";
+}
+
+
+// image3
+function hoverImage3(){
+
+document.getElementById("image3").src="Images/member 33.jpg";
+}
+function unhoverImage3(){
+document.getElementById("image3").src="images/member 3.jpg";
+}
+
+// IA4
+$(document).ready(function(){
+$("#mySearch").on("keyup", function(){
+var value=$(this).val().toLowerCase();
+$("#myTable tr").filter(function(){
+$(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+
+
+});
+
+
+});
+
+
+
+});
+
+// IA5
+
+// IA6 
+
+// IA7
+
+// IA8
+function validataForm(){
+var name=document.getElementById("name").value;
+var Email=document.getElementById("email").value;
+if (name==""||email==""){
+alert("Name or/and Email is missing!!")
+return false;
+}
+
+
+
+       }
+// IA9
+
+
+
+
+</script>
+
+</head>
+<body>
+<!-- HTML Content Here  -->
+<!-- IA9  -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class=" navbar-brand" href="#">Smart Home Assistant</a>
+    <!--  Samll Screen -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#button">
+    
+    <span class="navbar-toggler-icon"></span>
+    
+    
+    </button>
+    
+    <!-- Large Screen -->
+    <div class="collapse navbar-collapse" id="button">
+    
+    
+    <ul class="nav navbar-nav">
+    <li><a href="#about">About</a> </li>
+    <li><a href="#product">Product</a> </li>
+    <li><a href="#team">Team</a> </li>
+    <li><a href="#Features">Features</a> </li>
+    <li><a href="#Smart">Smart</a> </li>
+    <li><a href="#customer">Testimonials</a> </li>
+    <li><a href="#order">order</a> </li>
+    <li><a href="#contact">contact</a> </li>
+    
+    
+    
+    </ul>
+    
+    
+    
+    </div>
+<!-- IA1 -->
+<div class="container-company text-center" Id="about">
+    <h2> Smart Home     </h2>
+    <p> Smart Home Assistant </p>
+    <button onclick="welcomeMsg()"> Welcome  </button>
+    
+    
+    
+    </div>
+<!-- IA2 -->
+<div class="container-product text-center" id="product">
+    <div class="row">
+    
+    <!--left column-->
+    <div class="col-sm-8">
+    <h2> Home Smart Assistant </h2>
+    <P Id="productInfo" style="display: none;">My product is  called Smart Home Assistant. This product is made for people's homes . This product will have many  capabilities that the smart home assistant will do. The first  capbiliitey  is Home Automation which  allows you or the AI  to control system  features that the home smart assistant has  like lighting, heat, security camera, door locks , and A/C. </P>
+      <button onclick="showInfo()">Product Informantion </button>
+    
+    </div>
+    
+    <!--right column-->
+    <div class="col-sm-4">
+    <img class="product" src="images/product.jfif">
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    </div> 
+<!-- IA3 -->
+<div class="container-team text-center" id="team">
+    <div class="row">
+    
+        <h2>Smart Home Team</h2>
+    <!-- column1 -->
+    <div class="col-sm-4">
+    <div class="box">
+    <h3>CEO</h3>
+    <img class="member" id="image1" src="Images/member 1.jpg" onmouseover="hoverImage1()" onmouseout="unhoverImage1()"> 
+    <p>Pedro Ayvar </p>
+    </div>
+    </div>
+    <!-- column2 -->
+    <div class="col-sm-4">
+        <div class="box">
+        <h3>CTO</h3>
+        <img class="member" id="image2" src="Images/member 2.jpg" onmouseover="hoverImage2()" onmouseout="unhoverImage2()">
+        <p>John </p>
+        </div>
+        </div>
+    
+    <!-- column3 -->
+    <div class="col-sm-4">
+        <div class="box">
+        <h3>CMO</h3>
+        <img class="member" id="image3" src="Images/member 3.jpg" onmouseover="hoverImage3()" onmouseout="unhoverImage3()">
+        <p>Dutch </p>
+        </div>
+        </div>
+    
+    
+    
+    </div>
+    </div>
+<!-- IA4 -->
+<div class="container-feature text center" id="features">
+    <div class="row">
+    <h2> Smart Home Assistant </h2>
+    
+       <!--Search Bar -->
+    <input Id="mySearch" type="text" class="search" placeholder="search...">
+    
+    <!-- Table to present features   -->
+    
+    <table>
+    <!-- Table Head -->
+    <thead>
+    <tr>
+    <th>   ITems</th>
+    <th>  Features </th>
+    <th>  Description </th>
+    </tr>
+    
+    </Thead>
+    
+    <!-- Table Body -->
+    
+    <tbody id="myTable">
+    <tr>
+    <td> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-fullscreen" viewBox="0 0 16 16">
+        <path d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"/>
+      </svg></td>
+    <td> touch screen </td>
+    <td> Tounch Screen to control the slides</td>
+    </tr>
+    
+    <tr>
+        <td> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-app" viewBox="0 0 16 16">
+            <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+          </svg></td>
+        <td> App </td>
+        <td> App to control the Smarthome assistant </td>
+        </tr>
+        
+        <tr>
+            <td> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+              </svg></td>
+            <td> Artificial Intelligence: </td>
+            <td> AI  personalized recommendation  , adjustment setting  based on the user behavior pattern.
+            </td>
+            </tr>
+    
+    
+    
+    </tbody>
+    
+    
+    
+    </table>
+    
+    
+    </div>
+    </div>
+<!-- IA5 -->
+<div class="container-smart text-center" id="samrt">
+    <div class="row">
+    
+    <div class="carousel slide" Id="slideshow" data-bs-ride="carousel">
+    <div class="carousel-inner">
+    <!--part 1: Smart feature images-->
+    <!-- feature 1 -->
+    <div class="carousel-item active">
+    <img class="slide-pic" src="images/Smart 1.jpg">
+    <div class="carousel-caption">
+    <h2>Wi-Fi Remote control</h2>
+    </div>
+    
+    
+    </div>
+    
+    <!-- feature 2-->
+    <div class="carousel-item ">
+        <img class="slide-pic" src="images/Smart2.jpg">
+        <div class="carousel-caption">
+        <h2>For Homes</h2>
+        </div>
+        
+        
+        </div>
+    
+    <!--feature 3 -->
+    <div class="carousel-item">
+        <img class="slide-pic" src="images/Smart 3.jpg">
+        <div class="carousel-caption">
+        <h2>AI control</h2>
+        </div>
+        
+        
+        </div>
+    
+    <!-- part 2: button-->
+    <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#slideshow">
+    <span class="carousel-control-prev-icon"></span>
+    </button>
+    
+    <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#slideshow">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+    
+    
+    
+    <!--part 3:indicators-->
+    <div class="carousel-indicators">
+    <!--indicator-->
+    <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active">
+    
+    
+    
+    </button>
+    
+    <!-- indicator2-->
+    <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1">
+    
+    </button>
+    
+    <!--indicator 3-->
+    <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2">
+    
+    
+    </button>
+    
+    
+    </div>
+    
+    
+    
+    
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- IA6 -->
+<div class="Container-customer text-center" id="custpmer">
+    <div class="row">
+    <h2> Customer Testimonials </h2>
+    <!-- NavBar for buttons -->
+    <nav>
+    <div class="nav nav-tabs nav-justified">
+    <!-- button1 -->
+    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#menu1">
+        Spider-man
+    </button>
+    
+    <!-- button2  -->
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#menu2">
+        Batman
+    <!-- button3 -->
+    <button class="nav-link " data-bs-toggle="tab" data-bs-target="#menu3">
+        Kratos
+    
+    </div>
+    
+    
+    
+    
+    </nav>
+    
+    
+    
+    <!-- Content-->
+    <div class="tab-content">
+    
+    <!-- Customer1 -->
+    <div class="tab-pane fade show active" id="menu1">
+    <h3> Spider-man</h3>
+    <img class="customer" src="images/customer1.jpg">
+    <p> Great product, I love it so much!</p>
+    </div>
+    
+    <!-- Customer2 -->
+    <div class="tab-pane fade show " id="menu2">
+        <h3> Batman</h3>
+        <img class="customer" src="images/customer2.jpg">
+        <p> Really easy to use!</p>
+        </div>
+    
+    <!-- Customer3 -->
+    <div class="tab-pane fade show " id="menu3">
+        <h3> Kratos</h3>
+        <img class="customer" src="images/customer3.jpg">
+        <p> The app is really easy to use and the AI helps lot!</p>
+        </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    </div>
+<!-- IA7 -->
+<div class="continer-order text-center" id="order">
+    <div class="row">
+    <div class="col-sm-12">
+    
+    <img class="order" src="images/Order.jpg">
+    <h2> Smart Home Assistant </h2>
+    <p> Do you want to Pre-order it? Order Now!</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#link">
+    Pre-order Now
+    </button>
+    
+    
+    
+    </div>
+    </div>
+    </div>
+    
+    <!-- Modal Part-->
+    <div class="modal fade" id="link">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    
+    <!--Header-->
+    <div class="modal-header">
+    <h3> Pre-Order Form</h3>
+    <button Type="button" class="btn-close" data-bs-dismiss="modal">
+    
+    </button>
+    
+    
+    
+    </div>
+    
+    <!--body-->
+    <div class="modal-body">
+    <div class="form-group">
+    <label>Smart Home Assitant $150</label>
+    <input type="number" class="form-control" placeholder="How many do you want ">
+    
+    <label>Email</label>
+    <input type="Text" class="form-control" placeholder="Your Email ">
+    
+    </div>
+    
+    
+    </div>
+    
+    <!--Footer-->
+    <div class="modal-footers">
+    
+    <button Type="button" class="btn btn-primary">pay</button>
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    </div>
+<!-- IA8 -->
+<div class="container-contact text-center" id="contact">
+    <div class="row">
+    
+    <h2> Contact Us </h2>
+    <!--Left column - contact info  -->
+    <div class="col-sm-4">
+    <P> Emil: payvar2@toromail.csudh.edu</P>
+    <P>Phone Number: 800-727-6544</P>
+    <p>Address: 1000 E vivtoria Carson, CA</p>
+    
+    
+    </div>
+    
+    <!-- right column - form  -->
+    <div class="col-sm-8">
+    <form>
+    <!-- Row1 -->
+    <div class="row">
+    <div class="col-sm-6">
+    <Input class="form-control" placeholder="Name" id="Name">
+    
+    
+    </div>
+    <div class="col-sm-6">
+        <Input class="form-control" placeholder="Email" id="email">
+    
+    
+    
+    
+    </div>
+    <!-- Row2  -->
+    <div class="row">
+    <div class="col-sm-12">
+    <textarea class="form-control" placeholder="Comment" row="5">
+    
+    
+    </textarea>
+    
+    
+    </div>
+    
+    </div>
+    
+    
+    <!-- Row3  -->
+    <div class="row">
+    <div class="col-sm-6">
+    <label><input type="checkbox" name="gender" value="male">Male </label>
+    <label><input type="checkbox" name="gender" value="male">Famle </label>
+    
+    
+    </div>
+    <div class="col-sm-6">
+        <label><input type="checkbox" name="Memberships" value="Member">Male </label>
+        <label><input type="checkbox" name="Memberships" value="Non-member">Famle  </label>
+    
+    
+    </div>
+    
+    </div>
+    
+    <!-- Row4 -->
+    <div class="row">
+    <label> Income Level</label>
+    <select class="form-control" id="income-level">
+    <option value="low">low</option>
+    <option value="middle">Middle</option>
+    <option value="high">High</option>
+    
+    
+    </select>
+    
+    
+    
+    </div>
+    
+    <!-- Row5 - sumbit button -->
+    <div class="row">
+    <button class="btn btn-primary" onclick="validateForm()">Sumbit</button>
+    
+    
+    
+    </div>
+    
+    
+    </form>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    </div>
+    </div>
+<!-- IA92 -->
+<footer class="container-footer text-center">
+    <a href="#about">
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" stroke="black" stroke-width="3" height="30" fill="gray" class="bi bi-chevron-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+          </svg>
+    
+    </a>
+    <br>
+    <br>
+    <br>
+    
+    
+    <P>Copyright &copy;Smart Home, All Right Reserved.</P>
+    
+    
+    
+    
+    </footer>
+
+
+</body>
+</html>
